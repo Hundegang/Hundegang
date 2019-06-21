@@ -1,0 +1,314 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.img-1{
+  position: relative;
+  height: 200px;
+  bottom: -250px;
+  width: 100%;
+}
+.header{
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background: #27ae60;
+  padding: 0 20px;
+  color: #fff;
+}
+.logo{
+  line-height: 100px;
+  float: left;
+  text-transform: uppercase;
+}
+
+.menu{
+  float: right;
+  padding-right: 40px;
+  line-height: 100px;
+}
+.menu a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: #2c3e50;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.parallax {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 800px) {
+	#head h1 {
+		font-size: 55px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	#head h3 {
+		font-size: 22px;
+		text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width:799px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+    padding-right: 40px;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #27ae60;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    padding: 0px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+  .img-1{
+    width: 100%;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+	#head h1 {
+		font-size: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	#head h3 {
+		font-size: 15px;
+		text-transform: uppercase;
+    }
+
+}
+
+#head {
+	background-image: url("https://ruxgeek.files.wordpress.com/2015/09/minecraft-wallpapers-with-shaders-by-ruxplay-8.png?w=1920&h=768&crop=1");
+	margin: 0;
+	padding: 332px 0px 232px 0px;
+	text-align: center;
+	color: white;
+  text-shadow: 2px 2px #34495e
+}
+
+.counting-sec{
+  padding: 40px 0;
+  width: 100%;
+  background: linear-gradient(90deg,#3c6382,#82ccdd);
+}
+.counting-inner-width{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+
+}
+.col{
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.col i{
+  font-size: 40px;
+  color: #333;
+}
+.num{
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.team-section{
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.team-inner-width{
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  color: #333;
+  overflow: hidden;
+}
+
+.team{
+  float: left;
+  width: calc(100% / 3);
+  overflow: hidden;
+  padding: 40px 0;
+  transition: 0.4s;
+}
+.team:hover{
+  background: #ddd;
+}
+.team img{
+  width: 120px;
+  height: 120px;
+}
+.team-name{
+  margin: 16px 0;
+  text-transform: uppercase;
+}
+.team-rang{
+  font-style: italic;
+  color: red;
+}
+.team-sm{
+  margin-top: 12px;
+}
+.team-sm a{
+  margin: 0 4px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: 0.4s;
+}
+.team-sm a:hover{
+  transform: scale(1.3);
+}
+.team-sm a i{
+  color: #333;
+  line-height: 30px;
+}
+
+@media screen and (max-width:600px) {
+  .team{
+    width: 100%;
+  }
+}
+.trennung {
+  width: 160px;
+  height: 5px;
+  background: black;
+  margin: 26px auto;
+}
+.about-section{
+  width: 100%;
+  background: #2ecc71;
+  padding: 40px 0;
+}
+.about-inner-width{
+  max-width: 1000px;
+  overflow: hidden;
+  padding: 0 20px;
+  margin: auto;
+}
+.about-section h1{
+  text-align: center;
+}
+.border{
+  width: 100px;
+  height: 3px;
+  background: #e74c3c;
+  margin: 40px auto;
+}
+.about-section-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-section-col{
+  flex: 50%;
+}
+.about{
+  padding-right: 30px;
+}
+.about p{
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.skills{
+  padding-left: 30px;
+}
+.skill{
+  margin-bottom: 10px;
+}
+.progress{
+  width: 100%;
+  height: 12px;
+  background: #ddd;
+  border-radius: 12px;
+}
+.progress-bar{
+  height: 12px;
+  background: #e74c3c;
+  border-radius: 12px;
+}
+.p1{
+  width: 100%;
+}
+.p2{
+  width: 100%;
+}
+.p3{
+  width: 100%;
+}
+.progress-bar span{
+  float: right;
+  margin-right: 6px;
+  line-height: 13px;
+  color: #fff;
+  font-size: 12px;
+}
+@media screen and (max-width:700px) {
+  .about-section-col{
+    flex: 100%;
+    margin: 10px 0;
+  }
+  .about,.skills{
+    padding: 0;
+  }
+  .about{
+    text-align: center;
+  }
+}
+.überschrift {
+  text-align: center;
+}
